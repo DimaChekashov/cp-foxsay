@@ -1,15 +1,27 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { HomePage } from "../../pages/home";
+import { ProfilePage } from "../../pages/profile";
+import { LoginPage } from "../../pages/login";
+import { SignupPage } from "../../pages/signup";
 
 // createHashRouter when deploy
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <div>Home</div>
+		element: <HomePage />
 	},
 	{
-		path: "/test",
-		element: <div>Test 2</div>
+		path: "/profile",
+		element: <ProfilePage />
+	},
+	{
+		path: "/signup",
+		element: <SignupPage />
+	},
+	{
+		path: "/login",
+		element: <LoginPage />
 	},
 ]);
 
